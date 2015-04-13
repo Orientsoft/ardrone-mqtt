@@ -1,0 +1,23 @@
+{
+  "name": "ardrone-mqtt",
+  "version": "0.0.0",
+  "description": "mqtt controller for ardrone",
+  "main": "ardrone-mqtt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@voyager.orientsoft.cn:INOC603/ardrone-mqtt.git"
+  },
+  "keywords": [
+    "ardrone"
+  ],
+  "author": "inoc",
+  "license": "ISC",
+  "dependencies": {
+    "ar-drone": "^0.3.3",
+    "mqtt": "^1.1.2",
+    "ws": "^0.7.1"
+  }
+}
