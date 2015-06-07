@@ -1,5 +1,5 @@
-var drone = require('../ardrone-mqtt')( '192.168.0.2'
+var drone = require('../ardrone-mqtt').mqtt( '192.168.0.145'
                                       , 'mqtt://voyager.orientsoft.cn:11883'
-                                      , 'ardrone')
+                                      , 'myo-ardrone')
 // console.log(drone.client)
                             

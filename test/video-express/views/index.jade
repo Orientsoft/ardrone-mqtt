@@ -1,0 +1,20 @@
+extends layout
+
+block append head
+  //- script(type='text/javascript', src='/dronestream/nodecopter-client.js')
+
+  script(type='text/javascript', src='/javascripts/vendor/broadway/sylvester.js')
+  script(type='text/javascript', src='/javascripts/vendor/broadway/glUtils.js')
+  script(type='text/javascript', src='/javascripts/vendor/broadway/util.js')
+  script(type='text/javascript', src='/javascripts/vendor/broadway/avc-codec.js')
+  script(type='text/javascript', src='/javascripts/vendor/broadway/avc.js')
+  script(type='text/javascript', src='/javascripts/vendor/broadway/canvas.js')
+  script(type='text/javascript', src='/javascripts/nodecopter-stream.js')
+
+
+block append bodyscripts
+  script.
+    var copterStream = new NodecopterStream(document.querySelector('#dronestream'),{'hostname':'127.0.0.1','port':1880});
+
+block content
+  div#dronestream(width=640, height=360)
